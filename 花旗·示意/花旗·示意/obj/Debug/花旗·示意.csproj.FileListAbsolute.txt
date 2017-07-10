@@ -1,0 +1,11 @@
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\bin\Debug\300.accdb
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\bin\Debug\花旗·示意.exe.config
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\bin\Debug\花旗·示意.exe
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\bin\Debug\花旗·示意.pdb
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗·示意.csprojResolveAssemblyReference.cache
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗_示意.Form1.resources
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗_示意.Properties.Resources.resources
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗·示意.csproj.GenerateResource.Cache
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗·示意.exe
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗·示意.pdb
+C:\Users\姫旦\documents\visual studio 2017\Projects\花旗·示意\花旗·示意\obj\Debug\花旗_示意.Form2.resources
