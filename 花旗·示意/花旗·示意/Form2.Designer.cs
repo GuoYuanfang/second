@@ -33,10 +33,12 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this._300DataSet1 = new 花旗_示意._300DataSet();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._300DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -52,7 +54,7 @@
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(365, 64);
+            this.richTextBox1.Size = new System.Drawing.Size(362, 64);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "用户名";
             // 
@@ -63,7 +65,7 @@
             this.richTextBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.richTextBox2.Location = new System.Drawing.Point(3, 112);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(365, 78);
+            this.richTextBox2.Size = new System.Drawing.Size(362, 78);
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "密码";
             // 
@@ -88,34 +90,40 @@
             this.tableLayoutPanel1.TabIndex = 3;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // button1
+            // checkBox2
             // 
-            this.button1.Location = new System.Drawing.Point(44, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 44);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "登录";
-            this.button1.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(185, 221);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(138, 28);
+            this.checkBox2.TabIndex = 5;
+            this.checkBox2.Text = "自动登录";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(60, 260);
+            this.checkBox1.Location = new System.Drawing.Point(3, 221);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(75, 43);
+            this.checkBox1.Size = new System.Drawing.Size(138, 28);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "保存密码";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // button1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(232, 263);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(83, 42);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "自动登录";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(3, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 44);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "登录";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // _300DataSet1
+            // 
+            this._300DataSet1.DataSetName = "_300DataSet";
+            this._300DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form2
             // 
@@ -125,8 +133,10 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._300DataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,5 +149,6 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
+        private _300DataSet _300DataSet1;
     }
 }

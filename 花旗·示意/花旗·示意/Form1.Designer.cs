@@ -127,8 +127,8 @@
             // 登陆退出ToolStripMenuItem
             // 
             this.登陆退出ToolStripMenuItem.Name = "登陆退出ToolStripMenuItem";
-            this.登陆退出ToolStripMenuItem.Size = new System.Drawing.Size(204, 54);
-            this.登陆退出ToolStripMenuItem.Text = "登陆";
+            this.登陆退出ToolStripMenuItem.Size = new System.Drawing.Size(268, 54);
+            this.登陆退出ToolStripMenuItem.Text = "登录";
             this.登陆退出ToolStripMenuItem.Click += new System.EventHandler(this.登陆退出ToolStripMenuItem_Click);
             // 
             // _300DataSet1

@@ -16,8 +16,10 @@ namespace 花旗_示意
         public Form1()
         {
             InitializeComponent();
-
+            
         }
+
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -108,8 +110,8 @@ namespace 花旗_示意
 
         private void 登陆退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            f2.Show();
+
+            f2.ShowDialog();
             f2.Close();
 
 
