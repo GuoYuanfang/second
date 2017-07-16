@@ -13,4 +13,3 @@ c:\users\姫旦\documents\visual studio 2017\Projects\花旗_二\花旗_二\obj\
 C:\Users\姫旦\Documents\Visual Studio 2017\Projects\花旗_二\花旗_二\obj\Debug\花旗_二.Form2.resources
 C:\Users\姫旦\Documents\Visual Studio 2017\Projects\花旗_二\花旗_二\obj\Debug\花旗_二.Form3.resources
 C:\Users\姫旦\documents\visual studio 2017\Projects\花旗_二\花旗_二\obj\Debug\花旗_二.Form4.resources
-C:\Users\姫旦\Documents\Visual Studio 2017\Projects\花旗_二\花旗_二\obj\Debug\花旗_二.Form5.resources

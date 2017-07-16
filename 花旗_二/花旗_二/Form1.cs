@@ -39,7 +39,7 @@ namespace 花旗_二
         private void Form1_Load(object sender, EventArgs e)
         {
             fill_the_buttom();
-            f3.Show();
+            f2.Show();
          
             
         }

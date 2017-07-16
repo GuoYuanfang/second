@@ -34,7 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textUser = new System.Windows.Forms.TextBox();
+            this.comboUser = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,14 +47,16 @@
             this.tableLayoutPanel2.Controls.Add(this.button2, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.checkBox2, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.checkBox1, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textUser, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.comboUser, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(245, 95);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(368, 436);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
@@ -62,7 +64,7 @@
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.textPassword, 2);
             this.textPassword.ForeColor = System.Drawing.Color.DarkGray;
-            this.textPassword.Location = new System.Drawing.Point(3, 112);
+            this.textPassword.Location = new System.Drawing.Point(3, 107);
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(362, 35);
             this.textPassword.TabIndex = 8;
@@ -74,7 +76,7 @@
             // button2
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.button2, 2);
-            this.button2.Location = new System.Drawing.Point(3, 330);
+            this.button2.Location = new System.Drawing.Point(3, 315);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(362, 48);
             this.button2.TabIndex = 6;
@@ -84,7 +86,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(185, 221);
+            this.checkBox2.Location = new System.Drawing.Point(185, 211);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(138, 28);
             this.checkBox2.TabIndex = 5;
@@ -94,24 +96,28 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 221);
+            this.checkBox1.Location = new System.Drawing.Point(3, 211);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(138, 28);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "保存密码";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textUser
+            // comboUser
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.textUser, 2);
-            this.textUser.ForeColor = System.Drawing.Color.DarkGray;
-            this.textUser.Location = new System.Drawing.Point(3, 3);
-            this.textUser.Name = "textUser";
-            this.textUser.Size = new System.Drawing.Size(362, 35);
-            this.textUser.TabIndex = 7;
-            this.textUser.Text = "用户名";
-            this.textUser.Click += new System.EventHandler(this.textUser_Click);
-            this.textUser.Leave += new System.EventHandler(this.textUser_Leave);
+            this.tableLayoutPanel2.SetColumnSpan(this.comboUser, 2);
+            this.comboUser.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboUser.FormattingEnabled = true;
+            this.comboUser.Items.AddRange(new object[] {
+            "张三",
+            "李四"});
+            this.comboUser.Location = new System.Drawing.Point(3, 3);
+            this.comboUser.Name = "comboUser";
+            this.comboUser.Size = new System.Drawing.Size(362, 32);
+            this.comboUser.TabIndex = 9;
+            this.comboUser.Text = "用户名";
+            this.comboUser.Enter += new System.EventHandler(this.comboUser_Enter);
+            this.comboUser.Leave += new System.EventHandler(this.comboUser_Leave);
             // 
             // Form2
             // 
@@ -134,9 +140,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textPassword;
-        private System.Windows.Forms.TextBox textUser;
+        private System.Windows.Forms.ComboBox comboUser;
     }
 }

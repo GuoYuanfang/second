@@ -33,31 +33,32 @@ namespace 花旗_二
         
 
         private void Form2_Load(object sender, EventArgs e)
-        {
-            textUser.Text = "用户名";
-            textPassword.Text = "密码";
-
-
-
-
-
-
-
-        }
+        {          
+            for(int i = 1; i < 5; i++)
+            {
+                string temp = "user" + i.ToString();
+                string vtemp = (string)Properties.Settings.Default[temp];
+                if(vtemp!="")comboUser.Items.Add(vtemp);
+            }
+                    }
 
 
         //用户名密码输入框
-        private void textUser_Click(object sender, EventArgs e)
+
+        private void comboUser_Enter(object sender, EventArgs e)
         {
-            textUser.Text = "";
-            textUser.ForeColor = Color.Black;
-        }
-        private void textUser_Leave(object sender, EventArgs e)
-        {
-            if (textUser.Text == "")
+            if(comboUser.Text == "用户名")
             {
-                textUser.Text = "用户名";
-                textUser.ForeColor = Color.DarkGray;
+                comboUser.Text = "";
+                comboUser.ForeColor = Color.Black;
+            }
+        }
+        private void comboUser_Leave(object sender, EventArgs e)
+        {
+            if(comboUser.Text == "")
+            {
+                comboUser.Text = "用户名";
+                comboUser.ForeColor = Color.DarkGray;
             }
         }
         private void textPassword_Click(object sender, EventArgs e)
@@ -94,7 +95,6 @@ namespace 花旗_二
 
 
 
-
         //数据库格式为
         //table - login
         //username(varchar(45))      password(varchar(45)) # 已经过MD5加密
@@ -102,26 +102,15 @@ namespace 花旗_二
         //remeber(tinyint)  login(tinyint)
 
 
-
-
-
         private void button1_Click(object sender, EventArgs e)
         // 点击登录
         // 登录状态保存至 login_state.whether_login
         {
-            
-            
-
-            string user = textBox1.Text;
-            string password = textBox2.Text;
+            string user = comboUser.Text;
+            string password = textPassword.Text;
             string en_password = md5_Encryption(password);
-
-
+            
             login_state.whether_login = checkPw(user, en_password);
-
-
-
-
         }
 
         private string md5_Encryption(string password)
